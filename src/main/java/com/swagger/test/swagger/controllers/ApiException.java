@@ -1,4 +1,4 @@
-package com.swagger.test.controllers;
+package com.swagger.test.swagger.controllers;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2018-10-09T06:12:03.498Z")
 

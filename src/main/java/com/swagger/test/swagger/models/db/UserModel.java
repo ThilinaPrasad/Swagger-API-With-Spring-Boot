@@ -1,4 +1,4 @@
-package com.swagger.test.user.models.db;
+package com.swagger.test.swagger.models.db;
 
 import javax.persistence.*;
 

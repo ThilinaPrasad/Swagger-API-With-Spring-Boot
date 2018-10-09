@@ -1,4 +1,4 @@
-package com.swagger.test.config;
+package com.swagger.test.swagger.config;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

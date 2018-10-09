@@ -1,7 +1,7 @@
 package com.swagger.test.user.services;
 
-import com.swagger.test.user.models.User;
-import com.swagger.test.user.models.db.UserModel;
+import com.swagger.test.swagger.models.User;
+import com.swagger.test.swagger.models.db.UserModel;
 import com.swagger.test.utilities.objectmapper.DatabaseObjectMapper;
 import com.swagger.test.user.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,9 +28,10 @@ public class UserService {
         return null;
     }
 
-    public void addUser(User user) throws IllegalAccessException{
+    public boolean addUser(User user) throws IllegalAccessException{
         UserModel userModel = dom.apiToDb(user,new UserModel());
         System.out.println(userRepo.save(userModel));
+        return true;
     }
 
 }

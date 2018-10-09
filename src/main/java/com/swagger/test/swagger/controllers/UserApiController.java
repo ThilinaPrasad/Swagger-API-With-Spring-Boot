@@ -1,7 +1,7 @@
-package com.swagger.test.controllers;
+package com.swagger.test.swagger.controllers;
 
-import com.swagger.test.user.models.Response;
-import com.swagger.test.user.models.User;
+import com.swagger.test.swagger.models.Response;
+import com.swagger.test.swagger.models.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.swagger.test.user.services.UserService;
 import io.swagger.annotations.*;

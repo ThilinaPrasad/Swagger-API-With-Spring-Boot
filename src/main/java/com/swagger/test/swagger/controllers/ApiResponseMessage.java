@@ -1,4 +1,4 @@
-package com.swagger.test.controllers;
+package com.swagger.test.swagger.controllers;
 
 import javax.xml.bind.annotation.XmlTransient;
 

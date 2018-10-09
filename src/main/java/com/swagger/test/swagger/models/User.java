@@ -1,4 +1,4 @@
-package com.swagger.test.user.models;
+package com.swagger.test.swagger.models;
 
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;

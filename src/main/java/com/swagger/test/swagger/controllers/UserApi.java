@@ -3,10 +3,10 @@
  * https://github.com/swagger-api/swagger-codegen
  * Do not edit the class manually.
  */
-package com.swagger.test.controllers;
+package com.swagger.test.swagger.controllers;
 
-import com.swagger.test.user.models.Response;
-import com.swagger.test.user.models.User;
+import com.swagger.test.swagger.models.Response;
+import com.swagger.test.swagger.models.User;
 import io.swagger.annotations.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package com.swagger.test.config;
+package com.swagger.test.swagger.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,7 +31,7 @@ public class SwaggerDocumentationConfig {
     public Docket customImplementation(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                    .apis(RequestHandlerSelectors.basePackage("com.swagger.test.controllers"))
+                    .apis(RequestHandlerSelectors.basePackage("com.swagger.test.swagger.controllers"))
                     .build()
                 .directModelSubstitute(java.time.LocalDate.class, java.sql.Date.class)
                 .directModelSubstitute(java.time.OffsetDateTime.class, java.util.Date.class)
