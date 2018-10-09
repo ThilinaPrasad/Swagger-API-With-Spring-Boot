@@ -9,14 +9,20 @@ import com.swagger.test.swagger.models.Response;
 import com.swagger.test.swagger.models.User;
 import io.swagger.annotations.*;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
-
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2018-10-09T06:12:03.498Z")
+import javax.validation.constraints.*;
+import java.util.List;
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2018-10-09T10:26:22.199Z")
 
 @Api(value = "user", description = "the user API")
 public interface UserApi {
@@ -53,15 +59,15 @@ public interface UserApi {
     ResponseEntity<User> getUserById(@ApiParam(value = "ID of deleting user", required = true) @PathVariable("id") Long id);
 
 
-    @ApiOperation(value = "Add a new user to the system", nickname = "updateUser", notes = "", response = Response.class, tags={ "User", })
+    @ApiOperation(value = "Add a new user to the system", nickname = "updateUser", notes = "", response = User.class, tags={ "User", })
     @ApiResponses(value = { 
-        @ApiResponse(code = 200, message = "Ok", response = Response.class),
+        @ApiResponse(code = 200, message = "Ok", response = User.class),
         @ApiResponse(code = 201, message = "Created", response = Response.class),
         @ApiResponse(code = 405, message = "Invalid input", response = Response.class) })
     @RequestMapping(value = "/user",
         produces = { "application/json" }, 
         consumes = { "application/json" },
         method = RequestMethod.PUT)
-    ResponseEntity<Response> updateUser(@ApiParam(value = "User object that needs to be updated in the system", required = true) @Valid @RequestBody User body);
+    ResponseEntity<User> updateUser(@ApiParam(value = "User object that needs to be updated in the system", required = true) @Valid @RequestBody User body);
 
 }

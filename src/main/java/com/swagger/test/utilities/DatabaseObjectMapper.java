@@ -1,4 +1,4 @@
-package com.swagger.test.utilities.objectmapper;
+package com.swagger.test.utilities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.stereotype.Component;
