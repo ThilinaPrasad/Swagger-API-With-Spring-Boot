@@ -63,7 +63,7 @@ public class DatabaseObjectMapper {
         Field[] dbFields = dbObject.getClass().getDeclaredFields();
         Field[] apiFields = apiObject.getClass().getDeclaredFields();
 
-        // Retrive db object values
+        // Retrive entities object values
             for (Field field : dbFields) {
                 field.setAccessible(true);
                 Column annotation = field.getAnnotation(Column.class);

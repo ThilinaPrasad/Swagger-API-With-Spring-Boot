@@ -1,9 +1,9 @@
-package com.swagger.test.swagger.models.db;
+package com.swagger.test.user.entities;
 
 import javax.persistence.*;
 
 @Entity(name = "user")
-public class UserModel {
+public class UserEntity {
 
     @Id
     @Column(name = "id")
